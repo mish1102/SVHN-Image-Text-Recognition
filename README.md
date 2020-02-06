@@ -17,3 +17,8 @@ The datset comes in two formats:
 
 The bounding box information are stored in digitStruct.mat inside each dataset. This can be loaded in Matlab.The digitStruct.mat file contains a struct called digitStruct with the same length as the number of original images. Each element in digitStruct has the following fields: name which is a string containing the filename of the corresponding image. bbox which is a struct array that contains the position, size and label of each digit bounding box in the image. Eg: digitStruct(300).bbox(2).height gives height of the 2nd digit bounding box in the 300th image. 
 
+#Scripts: 
+
+convert.py : This file is responsible for converting .mat files in respective dataset record to the much readable json format. 
+SVHN_problem_CV.ipynb : This is the file response file which take the image as an input and displays the Numerical digits as the output. 
+
